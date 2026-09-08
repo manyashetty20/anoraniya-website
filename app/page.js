@@ -60,7 +60,29 @@ export default function Home() {
 
     <section className="visitVisual"><div className="visitPhotos"><img src="/images/visit-1.jpg" alt="Anoraniya institutional visit"/><img src="/images/visit-2.jpg" alt="Anoraniya visit and learning experience"/><img src="/images/visit-3.jpg" alt="Club members during a visit"/><img src="/images/visit-4.jpg" alt="Anoraniya members at a research facility"/></div><div className="visitContent"><div className="sectionLabel">05 / LEARNING BEYOND CAMPUS</div><h2>Connected to the<br/><em>ecosystem.</em></h2><div className="visitList">{visits.map((v,i)=><div key={v}><span>{String(i+1).padStart(2,"0")}</span>{v}</div>)}</div></div></section>
 
-    <section id="leadership" className="section leadership"><div className="sectionLabel">06 / THE PEOPLE</div><h2>Guided by science.<br/><em>Driven by students.</em></h2><div className="peopleGrid"><div className="advisor"><span>FACULTY ADVISORS</span><h3>Dr. Tribikram Gupta<br/>Dr. Sateesh Babu</h3><p>Mentoring the club's academic direction and scientific initiatives.</p></div><div className="leader"><span>CLUB HEAD</span><h3>Suchir Dornala</h3><p>Leading Anoraniya's student initiatives, research culture and community.</p><div className="leaderPortrait"><img src="/images/founders/suchir-dornala.png" alt="Suchir Dornala" /></div></div><div className="leader"><span>CLUB CO-HEAD</span><h3>Nireeksha A</h3><p>Supporting the club's technical and organisational direction.</p><div className="leaderMark">Q</div></div></div><div className="founders"><span>FOUNDING MEMBERS</span><p>Raghava Mukunda &nbsp;·&nbsp; Prajwal J</p></div></section>
+    <section id="leadership" className="section leadership"><div className="sectionLabel">06 / THE PEOPLE</div><h2>Guided by science.<br/><em>Driven by students.</em></h2><div className="peopleGrid"><div className="advisor"><span>FACULTY ADVISORS</span><h3>Dr. Tribikram Gupta<br/>Dr. Sateesh Babu</h3><p>Mentoring the club's academic direction and scientific initiatives.</p></div><div className="leader suchirCard">
+
+  <div className="leaderImage">
+    <img
+      src="/images/founders/suchir-dornala.png"
+      alt="Suchir Dornala"
+    />
+  </div>
+
+  <div className="leaderMeta">
+
+    <span>CLUB HEAD</span>
+
+    <h3>Suchir Dornala</h3>
+
+    <p>
+      Leading Anoraniya's student initiatives,
+      research culture and community.
+    </p>
+
+  </div>
+
+</div><div className="leader"><span>CLUB CO-HEAD</span><h3>Nireeksha A</h3><p>Supporting the club's technical and organisational direction.</p><div className="leaderMark">Q</div></div></div></section>
 
 
     <section id="founders" className="foundersSection">

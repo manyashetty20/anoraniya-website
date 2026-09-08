@@ -22,9 +22,53 @@ footer{background:#10120f;color:#f4f3ec;padding:70px 8vw 25px}.footerTop{display
 
 
 /* Version 3 — Founding members */
-.leaderPortrait{position:absolute;inset:auto 0 0;height:180px;overflow:hidden;background:#20231f}
-.leaderPortrait img{width:100%;height:100%;object-fit:cover;object-position:center 28%;display:block}
+/* Club Head card */
 
+.suchirCard {
+  padding: 0 !important;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+}
+
+.leaderImage {
+  width: 100%;
+  height: 360px;
+  overflow: hidden;
+}
+
+.leaderImage img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+  display: block;
+  transition: transform 0.5s ease;
+}
+
+.suchirCard:hover .leaderImage img {
+  transform: scale(1.03);
+}
+
+.leaderMeta {
+  padding: 30px;
+}
+
+.leaderMeta span {
+  font-family: "DM Mono", monospace;
+  font-size: 10px;
+  letter-spacing: 0.14em;
+  color: #777b73;
+}
+
+.leaderMeta h3 {
+  margin-top: 18px;
+  margin-bottom: 18px;
+}
+
+.leaderMeta p {
+  margin-bottom: 0;
+}
 .foundersSection{padding:130px 8vw;background:#e5e6df}
 .foundersHero{display:flex;justify-content:space-between;align-items:flex-end;gap:60px;margin-bottom:70px}
 .foundersHero h2{margin-bottom:0}
